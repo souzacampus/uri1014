@@ -1,0 +1,21 @@
+using System;
+using System.Globalization;
+
+namespace uri1014
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int X;
+            double Y, M;
+
+            X = int.Parse(Console.ReadLine());
+            Y = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            M = X / Y;
+
+            Console.WriteLine(M.ToString("F3", CultureInfo.InvariantCulture) + " km/l");            
+        }
+    }
+}
